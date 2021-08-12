@@ -1,0 +1,235 @@
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono";
+  font-size: 1rem;
+}
+
+input {
+  border: 2px solid transparent;
+  text-align: right;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(186, 14%, 43%);
+  font: 700 0.8rem "Space Mono";
+  outline: none;
+  border-radius: 4px;
+}
+
+input:hover{
+  border-color: hsl(172, 67%, 45%);
+}
+
+h1 {
+  color: hsl(172, 67%, 45%);
+  margin: 0;
+  position: absolute;
+  right: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.logo {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.work_area {
+  background-color: hsl(185, 41%, 84%);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 70%;
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  border-radius: 10px;
+}
+
+/*  ========== right =========== */
+.summary {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 2rem;
+  margin: 2%;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.cost {
+  display: flex;
+  margin-bottom: 15%;
+  position: relative;
+}
+
+.cost p {
+  font-size: 0.8rem;
+  color: hsl(186, 14%, 43%);
+}
+
+.info {
+  margin-right: 20%;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  margin-left: 50%;
+}
+
+.reset_button {
+  display: flex;
+  justify-content: center;
+}
+
+.reset_button button {
+  background-color: hsl(186, 14%, 43%);
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: hsl(184, 14%, 56%);
+  border-radius: 10px;
+  margin-top: 15%;
+  height: 3rem;
+  width: 90%;
+}
+
+/*  ========= left ========= */
+.calcaulator {
+  width: 50%;
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+/*  ================= left top */
+.input_part {
+  position: relative;
+  display: flex;
+}
+
+.bill_cost {
+  width: 100%;
+}
+
+.input_part img {
+  position: absolute;
+  top: 14%;
+  left: 1%;
+}
+
+.item {
+  font-weight: 700;
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  width: 27%;
+  padding: 3%;
+  margin: 0.2rem;
+  background-color: hsl(183, 100%, 15%);
+}
+
+.item:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.custom-input {
+  font-weight: 700;
+  width: 23.6%;
+  padding: 1.5%;
+  margin: 0.2rem;
+}
+
+/*  =================  left bottom*/
+.text_part {
+  display: flex;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.text_part p {
+  display: flex;
+  position: absolute;
+  right: 0;
+  color: orange;
+  font-size: 0.6rem;
+  visibility: hidden;
+}
+
+.number_of_people {
+  margin-top: 2rem;
+}
+
+.input_n_people {
+  display: flex;
+  position: relative;
+}
+
+.input_n_people input {
+  width: 100%;
+}
+
+.input_n_people img {
+  position: absolute;
+  top: 15%;
+  left: 1%;
+}
+
+/* ============== media */
+@media (max-width:600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .text_part {
+    font-size: 0.7rem;
+  }
+
+  .text_part p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width:510px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .text_part {
+    font-size: 0.6rem;
+  }
+
+  .text_part p {
+    font-size: 0.4rem;
+  }
+
+}
+
+@media (max-width:440px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+  }
+  body {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 1.0rem;
+  }
+
+  .text_part {
+    font-size: 0.5rem;
+  }
+
+  .text_part p {
+    font-size: 0.3rem;
+  }
+}
